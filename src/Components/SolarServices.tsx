@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import ContactInfo from './ContactInfo';
-import { Padding } from '@mui/icons-material';
+import styled from 'styled-components';
 
 const containerStyle: React.CSSProperties = {
   display: 'flex',
@@ -18,6 +18,13 @@ const rowStyle: React.CSSProperties = {
   paddingLeft: '200px',
   gap: '40px',
 };
+
+const Divider = styled.hr`
+  border: 0;
+  height: 1px;
+  background: #ccc; 
+  margin: 20px 0;
+`;
 
 const SolarServices: React.FC = () => (
   <div style={containerStyle}>
@@ -43,8 +50,10 @@ const SolarServices: React.FC = () => (
       
       <ContactInfo />
     </div>
-    
+    <Divider />
   </div>
+
+
 );
 
 export default SolarServices;

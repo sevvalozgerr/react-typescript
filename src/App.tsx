@@ -7,8 +7,9 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import SolarServices from './Components/SolarServices';
-
-
+import Projects from './Components/Projects';
+import AboutUs from './Components/AboutUs';
+import Instagram from './Components/Instagram';
 const theme = createTheme();
 
 const App: React.FC = () => {
@@ -17,11 +18,10 @@ const App: React.FC = () => {
       <CssBaseline />
       <Navbar />
       <ParallaxSection />
-        <SolarServices />
-      
-      
-      
-    
+      <SolarServices />
+      <Projects/>
+      <AboutUs/>
+      <Instagram/>
     </ThemeProvider>
   );
 }

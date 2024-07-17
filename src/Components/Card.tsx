@@ -9,12 +9,13 @@ interface CardProps {
 
 const cardStyle: React.CSSProperties = {
   border: '1px solid #ffffff',
- 
   overflow: 'hidden',
   margin: '20px',
   maxWidth: '400px',
-  textAlign: 'center'
+ 
 };
+
+
 
 const imageStyle: React.CSSProperties = {
   width: '100%',
@@ -22,8 +23,10 @@ const imageStyle: React.CSSProperties = {
 };
 
 const contentStyle: React.CSSProperties = {
-  padding: '16px'
+  
 };
+
+
 
 const Card: React.FC<CardProps> = ({ src, alt, title, text }) => (
   <div style={cardStyle}>
