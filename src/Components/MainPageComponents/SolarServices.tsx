@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './Card';
-import ContactInfo from './ContactInfo';
+import Card from '../Card';
+import ContactInfo from '../MainPageComponents/ContactInfo';
 import styled from 'styled-components';
 
 const containerStyle: React.CSSProperties = {

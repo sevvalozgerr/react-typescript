@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PhotoCard from './PhotoCard';
+import PhotoCard from '../PhotoCard';
 
 
 const rowStyle: React.CSSProperties = {

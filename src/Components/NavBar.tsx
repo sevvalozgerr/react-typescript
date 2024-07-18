@@ -15,10 +15,12 @@ const theme = createTheme({
         main: '#FFFFFF',
       },
     },
+    
   });
 const ToolbarWrapper = styled(Toolbar)({
   display: 'flex',
   justifyContent: 'space-between',
+  height: '100px',
 });
 
 const NavLinks = styled('div')({

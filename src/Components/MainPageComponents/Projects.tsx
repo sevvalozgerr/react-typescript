@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProjectCard from './ProjectsCard';
+import ProjectCard from '../ProjectsCard';
 
 
 const rowStyle: React.CSSProperties = {

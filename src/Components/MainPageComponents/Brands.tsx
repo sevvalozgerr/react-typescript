@@ -1,16 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PhotoCard from './PhotoCard';
-
-
-const rowStyle: React.CSSProperties = {
-    display: 'flex',
-    flexDirection: 'row',
-    width: '100%',
-    flexWrap: 'wrap',
-    marginTop: '40px',
-    gap: '40px',
-  };
+import PhotoCard from '../PhotoCard';
 
   
 const PhotoContainer = styled.div`
@@ -22,20 +12,20 @@ const PhotoContainer = styled.div`
 
 const projects = [
   {
-    src: "./Assets/solarparallax.jpeg",
+    src: "./Assets/solarenergylogos.png",
     alt: 'Person 1',
   },
   {
-    src: "./Assets/solarparallax.jpeg",
+    src: "./Assets/solarenergylogos.png",
     alt: 'Person 2',
    
   },
   {
-    src: "./Assets/solarparallax.jpeg",
+    src: "./Assets/solarenergylogos.png",
     alt: 'Person 3',
   },
   {
-    src: "./Assets/solarparallax.jpeg",
+    src: "./Assets/solarenergylogos.png",
     alt: 'Person 4',
   }
 ];
@@ -48,12 +38,10 @@ const Divider = styled.hr`
 `;
 
 
-const AboutUs: React.FC = () => (
+const Brands: React.FC = () => (
   <PhotoContainer>
-    <div style={rowStyle}>
-      <h3 style={{paddingLeft: '16px', color: 'orange'}}>ABOUT US</h3>
-      <h3 style={{ paddingLeft: '860px',}}>See All About Us...</h3>
-    </div>
+    <Divider />
+    
     {projects.map((project, index) => (
       <PhotoCard
         key={index}
@@ -66,4 +54,4 @@ const AboutUs: React.FC = () => (
   
 );
 
-export default AboutUs;
+export default Brands;
